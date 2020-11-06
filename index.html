@@ -5,6 +5,7 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/d7aebf5372.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -40,7 +41,8 @@
         <a href="/login">Sign In/ Sign Up</a>
     </div>
 </nav>
-    <article class="container mt-3">
+<!--
+    <article class="container alert-container">
     <div class="row  d-none d-sm-block">
         <div class="col-12">
         <div class="alert alert-warning">
@@ -48,27 +50,31 @@
         6! <a href="#">See for details!</a>
         </div>
     </div>
-    </div>
-
+    </div> -->
+<div class="container-fluid callout-container"
     <!-- Callout-->
+    <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                <h1>The finest whiskeys delivered to your doorstep.</h1>
+                <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                <hr class="block-divider block-divider--orange">
                 <p class="lead">Sign up today to start recieving the world's best whiskeys every month. 
                 <s class="d-none d-sm-inline">€19.99</s>
                 <span class="d-inline d-sm-none"><br></span>
                 <strong><mark>First one is free!</mark></strong></p>
-                 <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                 <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                 <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
                 </section>
              </div>
         </div>
+</div> 
     <!--.callout-->
-    <hr>
+    
 
 
     <!--Quotes-->
+    <div class="container quotes-container"
     <section class="quotes">
         <div class="row">
             <div class="col-12  my-5 col-md-6">
@@ -109,10 +115,11 @@
         </div>    
     </div>
     </section>
-
+</div>
     <!--/.quotes-->
-    <hr>
+    
     <!--Features-->
+    <div class="container features-container">
     <section class="features">
         <div class="row">
             <div class="col-12 my-5 col-md-6">
@@ -164,7 +171,10 @@
         </div>
     </div>  
     </section>
-    <hr>
+    </div>
+    
+
+    <div class="container favorites-container"
     <section class="monthly-favorites">
         <div class="row">
             <div class="col-12">
@@ -208,7 +218,8 @@
          </div>
         </div> 
     </section>
-    </article>
+    </div>
+    
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
   <div class="modal-dialog" role="document">
