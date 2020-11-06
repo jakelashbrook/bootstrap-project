@@ -9,7 +9,19 @@
     <script src="https://kit.fontawesome.com/d7aebf5372.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-light bg-light navbar-expand-sm">
+<div class="container-fluid navalert-container">
+
+    <article class="container-fluid alert-container">
+    <div class="row  d-none d-sm-block">
+        <div class="col-12">
+        <div class="site-wide-alert alert alert-warning">
+        <strong>Sale Now On!</strong>We've got a sale on. Get a 12 month subscription for the price off
+        6! <a href="#">See for details!</a>
+        </div>
+    </div>
+    </div> 
+
+<nav class="navbar navbar-dark navbar-expand-sm">
     <a href="/" class="navbar-brand">Whiskey Drop</a>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
@@ -38,19 +50,11 @@
     </div>  
     <div class="d-none d-md-block">
         <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-        <a href="/login">Sign In/ Sign Up</a>
+        <a href="/login" class="btn btn--cta btn--red">Sign In/ Sign Up</a>
     </div>
 </nav>
-<!--
-    <article class="container alert-container">
-    <div class="row  d-none d-sm-block">
-        <div class="col-12">
-        <div class="alert alert-warning">
-        <strong>Sale Now On!</strong>We've got a sale on. Get a 12 month subscription for the price off
-        6! <a href="#">See for details!</a>
-        </div>
-    </div>
-    </div> -->
+</div>
+
 <div class="container-fluid callout-container"
     <!-- Callout-->
     <div class="opaque-overlay">&nbsp;</div>
@@ -74,11 +78,13 @@
 
 
     <!--Quotes-->
-    <div class="container quotes-container"
+    <div class="container-wrapper">
+    <div class="container quotes-container content-container"
     <section class="quotes">
         <div class="row">
-            <div class="col-12  my-5 col-md-6">
+            <div class="col-12  page-header">
             <h2 class="text-uppercase">Quotes:</h2>
+            <hr class="block-divider block-divider--short">
             </div>
         </div>
 
@@ -115,15 +121,18 @@
         </div>    
     </div>
     </section>
+  </div>
 </div>
     <!--/.quotes-->
     
     <!--Features-->
-    <div class="container features-container">
+    <div class="container-wrapper container-wrapper--red">
+    <div class="container features-container content-container">
     <section class="features">
         <div class="row">
-            <div class="col-12 my-5 col-md-6">
+            <div class="col-12 page-header">
                 <h2 class="text-uppercase">Features:</h2>
+                <hr class="block-divider block-divider--short block-divider--white">
             </div>
         </div>
 
@@ -138,7 +147,7 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p><a class="btn btn-sm btn-light">Read More</a></p>
+                <p><button class="btn btn-sm btn-light">Read More</button></p>
             </div>    
         </div>
         
@@ -152,7 +161,7 @@
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p><a class="btn btn-sm btn-light">Read More</a></p>
+                <p><button class="btn btn-sm btn-light">Read More</button></p>
             </div>    
         </div>
         
@@ -166,19 +175,21 @@
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p><a class="btn btn-sm btn-light">Read More</a></p>
+                <p><button class="btn btn-sm btn-light">Read More</button></p>
             </div>
         </div>
     </div>  
     </section>
     </div>
+    </div>
     
 
-    <div class="container favorites-container"
+    <div class="container favorites-container content-container"
     <section class="monthly-favorites">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 page-header">
             <h2 class="text-uppercase">Monthly favourites:</h2>
+            <hr class="block-divider block-divider--short">
             </div>
         </div>
 
